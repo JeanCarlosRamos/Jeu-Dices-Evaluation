@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        <title>Jeu de Dés</title>
+    </head>
+    <body>
+        <!-- Section Joueurs -->
+        <div class="wrapper clearfix">
+            <!-- Section Joueur 1 -->
+            <div class="player-1-box active">
+                <div class="winner-text" id="winner-1">Winner</div>
+                <input type="text" id="namePlayer" placeholder="Joueur 1">
+                <div class="player-score" id="globalScorePlayer-1">1</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Score Actuel</div>
+                    <div class="player-current-score" id="currentScorePlayer-1">1</div>
+                </div>
+            </div>
+            
+            <!-- Section Joueur 2 -->
+            <div class="player-2-box">
+                <div class="winner-text" id="winner-2">Winner</div>
+                <input type="text" id="namePlayer" placeholder="Joueur 2">
+                <div class="player-score" id="globalScorePlayer-2">2</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Score Actuel</div>
+                    <div class="player-current-score" id="currentScorePlayer-2">2</div>
+                </div>
+            </div>
+            
+            <!-- Boutons Jeu -->
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New Game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll Dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold Score</button>
+
+            <!-- Champ de text pour définition de résultat à atteindre -->
+            <input type="text" id="winningScore" placeholder="Final score">
+
+            <!-- Images Dés -->
+            <img src="./Images/dice-1.png" alt="Dice" class="dice" id="dice1">
+            <img src="./Images/dice-1.png" alt="Dice" class="dice" id="dice2">
+        </div>
+        
+        <script src="fonction-jeu.js"></script>
+    </body>
+</html>
